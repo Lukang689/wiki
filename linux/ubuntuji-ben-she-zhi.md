@@ -13,7 +13,7 @@ sudo apt-get install vim eclipse eclipse-cdt meld bless subversion git rabbitvcs
 find . -type d -name ".svn"|xargs rm -rf
 ```
 
-##### 删除当前目录下除 *.iso 和 *.zip 外的所有文件
+##### 删除当前目录下除 _.iso 和 _.zip 外的所有文件
 
 ```
 find . -type f -not \(-name '*.zip' -or -name '*.iso' \) -delete
@@ -93,7 +93,7 @@ cat /proc/sys/net/ipv4/conf/eth0/force_igmp_version
 echo "2" > /proc/sys/net/ipv4/conf/eth0/force_igmp_version
 ```
 
-### windows-->linux格式转换
+### windows--&gt;linux格式转换
 
 用vi打开，执行
 
@@ -103,9 +103,7 @@ echo "2" > /proc/sys/net/ipv4/conf/eth0/force_igmp_version
 
 ### tar打包压缩
 
-```
-tar czvf test.tar.gz `ls -A`
-```
+    tar czvf test.tar.gz `ls -A`
 
 ### 加入组播组路由
 
@@ -133,3 +131,12 @@ sudo apt-get install nfs-kernel-server
 ```
 sudo mount -t 10.0.0.166:/home/longjing /mnt
 ```
+
+### ssh非22端口登录
+
+```
+ssh -p 2666 root@10.0.0.210
+```
+
+
+
