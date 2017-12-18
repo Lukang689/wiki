@@ -138,5 +138,11 @@ sudo mount -t 10.0.0.166:/home/longjing /mnt
 ssh -p 2666 root@10.0.0.210
 ```
 
+### scp使用非22端口
+
+```
+scp -P 26666 file 10.0.0.210:/home/djstava/
+```
+
 
 
