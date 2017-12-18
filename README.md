@@ -1,3 +1,2 @@
-# My Awesome Book
+这是一个用[gitbook](https://www.gitbook.com)制作的个人wiki,同时关联[github](https://github.com/djstava/wiki.git)。欢迎访问我的主页<http://www.xugaoxiang.com>。
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
