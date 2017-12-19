@@ -30,7 +30,7 @@ ffmpeg -i pbs5e6.srt -map s -y index.vtt
 
 ### 编辑mp4文件
 
-可以修改original_network_id、transport_stream_id、service_id等等，streamid代表音视频pid，可以修改video pid和audio pid
+可以修改original\_network\_id、transport\_stream\_id、service\_id等等，streamid代表音视频pid，可以修改video pid和audio pid
 
 ```
 ffmpeg -i input.mp4 -vcodec libx264 -strict -2 -acodec aac -streamid 1:2595 -
@@ -47,3 +47,12 @@ ffmpeg -re -i input.mp4 -vcodec libx264 -strict -2 -acodec aac -hls_list_size 0 
 ```
 
 如果音视频都是copy的话，去掉re参数可以快速进行切片
+
+### 分辨率及视频比例设置
+
+```
+ffmpeg -i input.mp4 -vf scale=1280x720,setdar=16:9 output
+```
+
+
+
