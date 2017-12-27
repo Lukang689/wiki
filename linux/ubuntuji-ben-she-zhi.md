@@ -129,7 +129,8 @@ sudo apt-get install nfs-kernel-server
 客户端挂载
 
 ```
-sudo mount -t 10.0.0.166:/home/longjing /mnt
+sudo apt-get install nfs-common
+sudo mount -t nfs 10.0.0.166:/home/longjing /mnt
 ```
 
 ### ssh非22端口登录
