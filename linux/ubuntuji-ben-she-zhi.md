@@ -145,5 +145,11 @@ ssh -p 2666 root@10.0.0.210
 scp -P 26666 file 10.0.0.210:/home/djstava/
 ```
 
+### 多网卡vlc播放udp
+
+```
+vlc --miface eth0 udp://@225.0.0.100:9001
+```
+
 
 
