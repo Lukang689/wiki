@@ -54,5 +54,11 @@ ffmpeg -re -i input.mp4 -vcodec libx264 -strict -2 -acodec aac -hls_list_size 0 
 ffmpeg -i input.mp4 -vf scale=1280x720,setdar=16:9 output
 ```
 
+### udp转码切片
+
+```
+ffmpeg -i 
+```
+
 
 
