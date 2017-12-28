@@ -60,5 +60,11 @@ ffmpeg -i input.mp4 -vf scale=1280x720,setdar=16:9 output
 ffmpeg -i "udp://@225.0.0.100:9001?buffer_size=1000000&fifo_size=1000000" -vcodec libx264 -acodec aac -strict -2 -r 25 -preset ultrafast -crf 23 -vf w3fdif -f flv -y rtmp://10.0.0.100:1935/live/xugaoxiang/index
 ```
 
+### 多网卡收取udp
+
+```
+route add -net 225.0.0.0 netmask 255.0.0.0 dev eno1
+```
+
 
 
