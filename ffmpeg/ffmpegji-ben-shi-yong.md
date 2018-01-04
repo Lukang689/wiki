@@ -68,7 +68,9 @@ route add -net 225.0.0.0 netmask 255.0.0.0 dev eno1
 
 ### 指定码率
 
-
+```
+-b 1M -minrate 1M -maxrate 1M -ab 128k
+```
 
 
 
