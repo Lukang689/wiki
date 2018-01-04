@@ -66,5 +66,9 @@ ffmpeg -i "udp://@225.0.0.100:9001?buffer_size=1000000&fifo_size=1000000" -vcode
 route add -net 225.0.0.0 netmask 255.0.0.0 dev eno1
 ```
 
+### 指定码率
+
+
+
 
 
