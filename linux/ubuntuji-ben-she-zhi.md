@@ -151,5 +151,13 @@ scp -P 26666 file 10.0.0.210:/home/djstava/
 vlc --miface eth0 udp://@225.0.0.100:9001
 ```
 
+### ufw基本使用
+
+```
+sudo ufw enable/disable
+sudo ufw allow 80
+sudo ufw delete allow 80
+```
+
 
 
