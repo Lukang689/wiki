@@ -53,7 +53,7 @@ BOARD_KERNEL_CMDLINE := console=ttyS0,115200n8 androidboot.hardware=zx2000 andro
 
 ### 开机运行shell脚本
 
-编辑init.$(platform).rc，增加
+编辑init.$\(platform\).rc，增加
 
 ```
 service makenode /system/etc/makebtusb0.sh
@@ -151,7 +151,7 @@ BOARD_KERNEL_CMDLINE := console=ttyS0,115200n8 androidboot.hardware=zx2000 andro
 
 ### 开机运行shell脚本
 
-编辑init.$(platform).rc，增加
+编辑init.$\(platform\).rc，增加
 
 ```
 service makenode /system/etc/makebtusb0.sh
@@ -249,7 +249,7 @@ BOARD_KERNEL_CMDLINE := console=ttyS0,115200n8 androidboot.hardware=zx2000 andro
 
 ### 开机运行shell脚本
 
-编辑init.$(platform).rc，增加
+编辑init.$\(platform\).rc，增加
 
 ```
 service makenode /system/etc/makebtusb0.sh
@@ -291,4 +291,12 @@ netcfg(ifconfig) eth0 down
 netcfg eth0 hwaddr 10:10:10:10:10:10
 netcfg(ifconfig) eth0 up
 ```
+
+### 模拟键值发送
+
+```
+adb shell input keyevent $键值
+```
+
+
 
