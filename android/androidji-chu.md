@@ -292,7 +292,7 @@ netcfg eth0 hwaddr 10:10:10:10:10:10
 netcfg(ifconfig) eth0 up
 ```
 
-### 模拟键值发送
+### adb模拟键值发送
 
 ```
 adb shell input keyevent $键值
