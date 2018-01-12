@@ -159,5 +159,13 @@ sudo ufw allow 80
 sudo ufw delete allow 80
 ```
 
+### tar系统备份
 
+```
+su
+cd /
+tar cvpzf /media/djstava/backup.tgz --exclude=/proc --exclude=/media –exclude=/mnt –exclude=/sys
+```
+
+偶尔会出现"tar: Error exit delayed from previous errors", 将需要备份的目录都增加读的权限
 
