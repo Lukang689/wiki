@@ -167,5 +167,5 @@ cd /
 tar cvpzf /media/djstava/backup.tgz --exclude=/proc --exclude=/media –exclude=/mnt –exclude=/sys
 ```
 
-偶尔会出现"tar: Error exit delayed from previous errors", 将需要备份的目录都增加读的权限
+偶尔会出现"tar: Error exit delayed from previous errors", 将需要备份的目录都增加读的权限，另外备份还原系统时最好在live disk中进行
 
