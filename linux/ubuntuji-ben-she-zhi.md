@@ -169,3 +169,24 @@ tar cvpzf /media/djstava/backup.tgz --exclude=/proc --exclude=/media –exclude=
 
 偶尔会出现"tar: Error exit delayed from previous errors", 将需要备份的目录都增加读的权限，另外备份还原系统时最好在live disk中进行
 
+### samba基本使用
+
+```
+sudo apt-get install samba
+
+# /etc/samba/smb.conf
+[ubuntu]
+    comment = ubuntu
+    path = /home/xugaoxiang
+    writable = yes
+    valid user = xugaoxiang
+    available = yes
+    create mask = 0777
+    directory mask = 0777
+    public = yes
+    
+sudo /etc/init.d/smbd restart
+```
+
+
+
