@@ -184,8 +184,14 @@ sudo apt-get install samba
     create mask = 0777
     directory mask = 0777
     public = yes
-    
+
 sudo /etc/init.d/smbd restart
+```
+
+### 设置网关
+
+```
+sudo route add -net 10.0.0.0 netmask 255.0.0.0 gateway 10.0.0.20 dev enps20
 ```
 
 
