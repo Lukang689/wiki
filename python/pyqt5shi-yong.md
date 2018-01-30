@@ -1,3 +1,9 @@
+##### 环境安装
+
+```
+pip3 install PyQt5-tools
+```
+
 ##### PyQt5使用快捷键
 
 ```
@@ -20,7 +26,10 @@ def closeEvent(self, event):
 reply = QMessageBox.question(self, 'title', 'message', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
 if reply == QMessageBox.No:
     print('user select no')
-                
+
 else:
     print('user select yes')
 ```
+
+
+
