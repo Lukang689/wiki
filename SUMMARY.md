@@ -26,6 +26,7 @@
 ## Python
 
 * [PyQt5使用](python/pyqt5shi-yong.md)
+* [PyCharm使用技巧](python/pycharmshi-yong-ji-qiao.md)
 
 ## Database
 
