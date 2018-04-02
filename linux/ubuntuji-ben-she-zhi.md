@@ -194,5 +194,12 @@ sudo /etc/init.d/smbd restart
 sudo route add -net 10.0.0.0 netmask 255.0.0.0 gateway 10.0.0.20 dev enps20
 ```
 
+### Samba配置
+
+```
+ sudo touch /etc/samba/smbpasswd
+ sudo smbpasswd -a xugaoxiang
+```
+
 
 
