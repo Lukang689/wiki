@@ -201,5 +201,16 @@ sudo route add -net 10.0.0.0 netmask 255.0.0.0 gateway 10.0.0.20 dev enps20
  sudo smbpasswd -a xugaoxiang
 ```
 
+smb.conf
+
+```
+[share]
+   path = /home/xugaoxiang/share
+   available = yes
+   browsealbe = yes
+   public = yes
+   writable = yes
+```
+
 
 
