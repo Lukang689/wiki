@@ -212,5 +212,9 @@ smb.conf
    writable = yes
 ```
 
+### Disable hud-service
 
+```
+sudo chmod -x /usr/lib/x86_64-linux-gnu/hud/hud-service
+```
 
